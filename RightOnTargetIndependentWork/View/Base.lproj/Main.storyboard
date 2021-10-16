@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Числа-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RightOnTargetIndependentWork" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,7 +60,7 @@
                             <constraint firstItem="P2m-VB-Ytc" firstAttribute="top" secondItem="Yp8-TI-plM" secondAttribute="bottom" constant="35" id="wvj-nO-0Gf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XEj-8n-Je5"/>
+                    <navigationItem key="navigationItem" title="Числа" id="XEj-8n-Je5"/>
                     <connections>
                         <outlet property="slider" destination="0SE-tn-mXP" id="X2s-5A-0sM"/>
                         <outlet property="theHiddenNumber" destination="Yp8-TI-plM" id="rH4-KB-18P"/>
@@ -122,7 +122,7 @@
             </objects>
             <point key="canvasLocation" x="753.84615384615381" y="596.44549763033172"/>
         </scene>
-        <!--Color Game View Controller-->
+        <!--Цвета-->
         <scene sceneID="pni-w9-SE0">
             <objects>
                 <viewController id="nW6-nF-FMD" customClass="ColorGameViewController" customModule="RightOnTargetIndependentWork" customModuleProvider="target" sceneMemberID="viewController">
@@ -180,7 +180,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHO-6B-RNt">
-                                <rect key="frame" x="386.66666666666669" y="59" width="71" height="36"/>
+                                <rect key="frame" x="386.66666666666669" y="94" width="71" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -189,13 +189,13 @@
                         <viewLayoutGuide key="safeArea" id="6ac-ZI-1JC"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="fnz-DU-rd0" firstAttribute="top" secondItem="tHO-6B-RNt" secondAttribute="bottom" constant="85" id="8PD-OZ-dwI"/>
+                            <constraint firstItem="fnz-DU-rd0" firstAttribute="top" secondItem="tHO-6B-RNt" secondAttribute="bottom" constant="50" id="8PD-OZ-dwI"/>
                             <constraint firstItem="fnz-DU-rd0" firstAttribute="centerX" secondItem="r8z-fM-gOQ" secondAttribute="centerX" id="Fk6-V2-TDm"/>
                             <constraint firstItem="tHO-6B-RNt" firstAttribute="centerX" secondItem="r8z-fM-gOQ" secondAttribute="centerX" id="ZMe-vM-yUZ"/>
                             <constraint firstItem="fnz-DU-rd0" firstAttribute="centerY" secondItem="r8z-fM-gOQ" secondAttribute="centerY" id="lwt-aN-QuB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="apJ-mH-XQZ"/>
+                    <navigationItem key="navigationItem" title="Цвета" id="apJ-mH-XQZ"/>
                     <connections>
                         <outlet property="firstButton" destination="qAj-uy-t4f" id="AHw-4k-lcY"/>
                         <outlet property="fourthButton" destination="BLd-XO-0jB" id="7Wt-UT-cOw"/>
@@ -211,11 +211,14 @@
         <!--Navigation Controller-->
         <scene sceneID="ue9-Yr-fD0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E8i-3u-nnZ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E8i-3u-nnZ" customClass="NavigationController" customModule="RightOnTargetIndependentWork" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="n1l-t1-EWK">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="32"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="0.0"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

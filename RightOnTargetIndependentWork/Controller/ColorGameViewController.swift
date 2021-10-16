@@ -27,26 +27,27 @@ class ColorGameViewController: UIViewController {
     var variableColor: String {
         colorGame.massiveHexColors.randomElement()!
     }
+    let backColorButton = UIBarButtonItem()
     // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Создаем экземпляр класса с количеством уровней и максимальным количеством очков
         colorGame = ColorGame(maxLevels: 10, maxOfColorPoint: 250)
+        // Даем лейблу текст в зависимости от currentRandomColor
         hexColorCode.text = colorGame.currentRandomColor
+        // Создаем массив баттонов
         buttonsColletion = [firstButton, secondButton, thirdButton, fourthButton]
+        // Делаем закругление углов у кнопок
+        firstButton.layer.cornerRadius = 10
+        secondButton.layer.cornerRadius = 10
+        thirdButton.layer.cornerRadius = 10
+        fourthButton.layer.cornerRadius = 10
+        // Обновляем цвет кнопок
         updateButtons(secretColor: UIColor(hex: colorGame.currentRandomColor)!)
-//        buttonColors()
+        // Меняем текст на кнопке назад
+        backColorButton.title = "Назад"
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backColorButton
     }
-    
-    
-//     Даем цвет кнопкам
-//        func buttonColors() {
-//            firstButton.backgroundColor = UIColor(hex: colorGame.currentRandomColor)
-//            secondButton.backgroundColor = UIColor(hex: colorGame.massiveHexColors.randomElement()!)
-//            thirdButton.backgroundColor = UIColor(hex: colorGame.massiveHexColors.randomElement()!)
-//            fourthButton.backgroundColor = UIColor(hex: colorGame.massiveHexColors.randomElement()!)
-//        }
-    
     
     // Метод обновления цветов кнопок в рандомной последовательности
     func updateButtons(secretColor: UIColor) {
@@ -61,7 +62,6 @@ class ColorGameViewController: UIViewController {
         }
     }
     
-    
     // Обновляем текст лейбла
     func updateHexText(newText: String) {
         hexColorCode.text = newText
@@ -74,7 +74,6 @@ class ColorGameViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
         
     }
-    
     
     //MARK: -Action
     // Кнопки с помощью которых надо угадать цвет
@@ -89,11 +88,9 @@ class ColorGameViewController: UIViewController {
         if colorGame.isColorGameEnded {
             showAlert(score: numberOfPoints)
             colorGame.restartColorGame()
-//            buttonColors()
             updateButtons(secretColor: UIColor(hex: colorGame.currentRandomColor)!)
         } else {
             colorGame.newColorLevel()
-//            buttonColors()
             updateButtons(secretColor: UIColor(hex: colorGame.currentRandomColor)!)
             
         }
@@ -112,11 +109,9 @@ class ColorGameViewController: UIViewController {
         if colorGame.isColorGameEnded {
             showAlert(score: numberOfPoints)
             colorGame.restartColorGame()
-//            buttonColors()
             updateButtons(secretColor: UIColor(hex: colorGame.currentRandomColor)!)
         } else {
             colorGame.newColorLevel()
-//            buttonColors()
             updateButtons(secretColor: UIColor(hex: colorGame.currentRandomColor)!)
             
         }
@@ -135,11 +130,9 @@ class ColorGameViewController: UIViewController {
         if colorGame.isColorGameEnded {
             showAlert(score: numberOfPoints)
             colorGame.restartColorGame()
-//            buttonColors()
             updateButtons(secretColor: UIColor(hex: colorGame.currentRandomColor)!)
         } else {
             colorGame.newColorLevel()
-//            buttonColors()
             updateButtons(secretColor: UIColor(hex: colorGame.currentRandomColor)!)
             
         }
@@ -158,11 +151,9 @@ class ColorGameViewController: UIViewController {
         if colorGame.isColorGameEnded {
             showAlert(score: numberOfPoints)
             colorGame.restartColorGame()
-//            buttonColors()
             updateButtons(secretColor: UIColor(hex: colorGame.currentRandomColor)!)
         } else {
             colorGame.newColorLevel()
-//            buttonColors()
             updateButtons(secretColor: UIColor(hex: colorGame.currentRandomColor)!)
             
         }

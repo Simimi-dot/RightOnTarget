@@ -18,13 +18,16 @@ class ViewController: UIViewController {
     
     // MARK: - Properties
     var game: CurrentGame!
-    
+    let backNumberButton = UIBarButtonItem()
     // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // При загрузке приложения создаем экземпляр Класса, чтобы лишний раз не нажимать на кнопку
         game = CurrentGame(startValue: 1, endValue: 50, rounds: 5)
         updatingTheTextNumber(newText: String(game.currentRandomValue))
+        // Меняем текст на кнопке назад
+        backNumberButton.title = "Назад"
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backNumberButton
     }
     
     // Обновление текстового лейбла для того чтобы отобразилось новое загаданное число

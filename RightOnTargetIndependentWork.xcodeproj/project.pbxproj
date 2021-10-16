@@ -22,6 +22,7 @@
 		06AB1D2D2718550F00A70047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06AB1D2B2718550F00A70047 /* Main.storyboard */; };
 		06AB1D2F2718551400A70047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06AB1D2E2718551400A70047 /* Assets.xcassets */; };
 		06AB1D322718551400A70047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06AB1D302718551400A70047 /* LaunchScreen.storyboard */; };
+		06F9C517271B3C3A00B139F1 /* Extension-UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9C516271B3C3A00B139F1 /* Extension-UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		06AB1D2E2718551400A70047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06AB1D312718551400A70047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06AB1D332718551400A70047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06F9C516271B3C3A00B139F1 /* Extension-UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-UIColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				0673EA3627185A560042550C /* Game.swift */,
 				0673EA422718C27F0042550C /* ColorGame.swift */,
+				06F9C516271B3C3A00B139F1 /* Extension-UIColor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06AB1D2A2718550F00A70047 /* ViewController.swift in Sources */,
+				06F9C517271B3C3A00B139F1 /* Extension-UIColor.swift in Sources */,
 				0673EA3F2718C05B0042550C /* MainMenuViewController.swift in Sources */,
 				06AB1D262718550F00A70047 /* AppDelegate.swift in Sources */,
 				0673EA432718C27F0042550C /* ColorGame.swift in Sources */,
