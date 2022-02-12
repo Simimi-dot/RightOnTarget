@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Создаем протокол
 protocol Game {
     // Количество очков за все завершенные раунды игры
     var numberOfPoints: Int { get }
